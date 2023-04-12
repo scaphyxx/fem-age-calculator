@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap");
+
+@layer utilities {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    margin: 0;
+  }
+}
+
+@layer base {
+  html {
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+  }
+
+  .form-label {
+    @apply flex flex-col text-smokey-gray text-[0.35rem] md:text-[0.4rem] uppercase tracking-[0.1rem] md:tracking-[0.2rem] font-bold;
+  }
+
+  .form-input {
+    @apply bg-white border border-light-gray outline-none transition-all duration-200 selection:bg-primary/40 focus:border-primary caret-primary md:rounded-lg rounded-sm md:py-2 md:px-4 px-2 py-1 text-[0.5rem] md:text-[0.7rem] lg:text-base md:w-16 w-10 lg:w-24 placeholder:text-smokey-gray text-off-black;
+  }
+
+  .result {
+    @apply md:text-4xl text-2xl font-bold italic lowercase;
+  }
+
+  .result span {
+    @apply text-primary;
+  }
+
+  .form-error-message {
+    @apply text-[0.4rem] md:text-[0.5rem] text-secondary/80 italic;
+  }
+}
