@@ -8,7 +8,7 @@ This is a solution to the [Age calculator app challenge on Frontend Mentor](http
 
 ## Links
 
-- Live Site URL: [](https://fem-age-calculator.vercel.app/)
+- [Live Site](https://fem-age-calculator.vercel.app/)
 
 ## Built with
 
